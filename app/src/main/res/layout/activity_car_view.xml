@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="13sp">
+
+        <ImageView
+            android:id="@+id/returnImg"
+            android:layout_width="40sp"
+            android:layout_height="40sp"
+            android:src="@drawable/returnimg"
+            android:layout_alignLeft="@id/title"/>
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_above="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="车辆详情"
+            android:textSize="24sp"
+            tools:ignore="NotSibling"
+            android:gravity="center"/>
+        <ImageView
+            android:id="@+id/gradeImg"
+            android:layout_width="40sp"
+            android:layout_height="40sp"
+            android:src="@drawable/sgrade"
+            android:layout_alignRight="@id/title"/>
+    </RelativeLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/su_7"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            app:cardCornerRadius="20dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/xiaomi" />
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_gravity="center_vertical"
+            android:text="收购价格" />
+
+        <TextView
+            android:id="@+id/create_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_gravity="center_vertical"
+            android:text="2024-10-10"
+            android:textColor="#999999" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/brand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:singleLine="true"
+        android:text="汽车品牌+型号"
+        android:textSize="23sp"
+        android:textColor="#222222" />
+    <TextView
+        android:id="@+id/content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="15sp"
+        android:text="小米汽车首款作品 三年打磨,满怀敬畏之心 十倍投入,自研关键技术 融汇优雅设计、澎湃性能与生态科技 C 级豪华科技轿车 人车合一,我心澎湃"
+        android:textColor="#222222" />
+
+
+
+    <Button
+        android:id="@+id/sellBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="卖出"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"/>
+
+
+</LinearLayout>

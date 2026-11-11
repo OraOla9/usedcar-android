@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">车易通</string>
+    <string-array name="levels_array">
+        <item>S</item>
+        <item>A</item>
+        <item>B</item>
+        <item>C</item>
+    </string-array>
+</resources>

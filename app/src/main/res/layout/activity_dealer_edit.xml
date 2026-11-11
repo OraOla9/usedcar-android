@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="13sp">
+
+        <ImageView
+            android:id="@+id/returnImg"
+            android:layout_width="40sp"
+            android:layout_height="40sp"
+            android:src="@drawable/returnimg"
+            android:layout_alignLeft="@id/title"/>
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_above="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="编辑资料"
+            android:textSize="24sp"
+            tools:ignore="NotSibling"
+            android:gravity="center"/>
+
+    </RelativeLayout>
+
+    <!-- 用户头像 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:padding="16dp">
+        <ImageView
+            android:id="@+id/user_avatar"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/iu"
+            android:layout_marginBottom="16dp"
+            android:scaleType="centerCrop"
+            android:background="@drawable/circular_background"
+            android:layout_gravity="center"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10sp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="用户名"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:layout_gravity="center"/>
+            <EditText
+                android:id="@+id/dealerName"
+                android:layout_marginLeft="20sp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="用户名"
+                android:textSize="25sp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10sp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="密    码"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:layout_gravity="center"/>
+            <EditText
+                android:id="@+id/dealerpassword"
+                android:layout_marginLeft="20sp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="密码"
+                android:textSize="25sp"/>
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/saveBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="保存"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="#007bff"
+            android:textColor="#ffffff" />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
+
